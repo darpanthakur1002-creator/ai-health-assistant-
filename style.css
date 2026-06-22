@@ -1,0 +1,131 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+let calories = 1200;
+
+function addCalories() {
+    calories += 50;
+    document.getElementById("calories").innerHTML = calories + " Burned";
+}
+/* Body */
+body{
+    background:#f5edc2;
+}
+
+/* Main Container */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    background:#69aa8e;
+    color:rgb(18, 10, 10);
+    padding:20px;
+}
+
+.sidebar button{
+    width:100%;
+    padding:20px;
+    margin-top:10px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+/* Main Content */
+.main{
+    flex:1;
+    padding:20px;
+}
+
+/* Cards Container */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(220px, 1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+/* Individual Card */
+.card{
+    background: rgb(210, 240, 239);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 3px 20px rgba(193, 174, 174, 0.1);
+
+    display:flex;
+    flex-direction:column;
+    height:260px;
+}
+.card button{
+    margin-top:auto;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#558674;
+    color:rgb(163, 153, 153);
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+/* Buttons inside cards */
+.card button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#e6d5e5;
+    color:rgb(8, 0, 0);
+    cursor:pointer;
+}
+
+/* Hover Effects */
+.card button:hover{
+    background:#6cc8dc;
+}
+
+.sidebar button:hover{
+    background:#74aac2;
+}
+.step-box{
+    text-align:center;
+    margin:20px 0;
+}
+.ai-health{
+    background:#d9f5f7;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.score-box{
+    text-align:center;
+    padding:20px;
+    background:#f4e3f7;
+    color:rgb(12, 8, 12);
+    border-radius:15px;
+    margin:15px 0;
+}
+
+.score-box h1{
+    font-size:60px;
+}
+
+.tips ul{
+    padding-left:20px;
+}
+
+.tips li{
+    margin:10px 0;
+}
